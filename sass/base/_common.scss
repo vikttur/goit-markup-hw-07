@@ -1,0 +1,27 @@
+body {
+	background-color: var(--color-bgr-head);
+
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--color-main);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.link {
+	color: var(--color-main);
+
+	transition:
+		color var(--time-animation) var(--timing-function);
+}
+
+.link:hover,
+.link:focus {
+	color: var(--color-accent);
+}
