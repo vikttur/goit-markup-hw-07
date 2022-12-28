@@ -8,51 +8,6 @@
 	align-items: center;
 }
 
-.nav-site {
-	align-items: center;
-}
-
-.nav-site,
-.nav-flex,
-.contact-flex {
-	display: flex;
-	padding: 0;
-	margin: 0;
-}
-
-.nav-flex {
-	margin-left: 93px;
-}
-
-.nav-flex>.item {
-	display: block;
-}
-
-.contact-flex {
-	margin-left: auto;
-}
-
-.item-flex {
-	display: flex;
-	align-items: center;
-}
-
-.contact-bgr-icon {
-	display: flex;
-	align-items: center;
-
-	color: var(--color-main);
-}
-
-.contact-bgr-icon:hover {
-	color: var(--color-accent);
-}
-
-.contact-icon {
-	display: inline-block;
-	margin-right: 10px;
-	fill: currentColor;
-}
 
 .nav-flex .link,
 .contact-flex .link {

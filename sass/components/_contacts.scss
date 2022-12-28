@@ -1,0 +1,25 @@
+.contact-flex {
+	margin-left: auto;
+}
+
+.item-flex {
+	display: flex;
+	align-items: center;
+}
+
+.contact-bgr-icon {
+	display: flex;
+	align-items: center;
+
+	color: var(--color-main);
+}
+
+.contact-bgr-icon:hover {
+	color: var(--color-accent);
+}
+
+.contact-icon {
+	display: inline-block;
+	margin-right: 10px;
+	fill: currentColor;
+}

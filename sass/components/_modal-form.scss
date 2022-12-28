@@ -186,13 +186,13 @@
 	color: var(--color-accent);
 }
 
+// готово
 .submit-button {
-	display: block;
+	@extend %button-main;
 	min-width: 200px;
 	padding: 10px 52px;
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	background-color: var(--color-accent);
 	transition:
 		background-color var(--time-animation) var(--timing-function);
 }

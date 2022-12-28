@@ -1,0 +1,29 @@
+%button {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	font-size: 16px;
+
+	cursor: pointer;
+}
+
+%button-main {
+	@extend %button;
+	background-color: var(--color-accent);
+	
+	font-weight: 700;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--color-bgr-head);
+	
+	border: none;
+}
+
+%container-position {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+

@@ -1,12 +1,12 @@
 body {
 	background-color: var(--color-bgr-head);
 
-	font-family: "Roboto", sans-serif;
+	font-family: $font-main;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--color-main);
-}
+	}
 
 img {
 	display: block;
@@ -14,14 +14,25 @@ img {
 	height: auto;
 }
 
+.main__hero {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .link {
 	color: var(--color-main);
 
 	transition:
 		color var(--time-animation) var(--timing-function);
+
+		&:hover,
+		&:focus {
+			color: var(--color-accent);
+		}
 }
 
-.link:hover,
-.link:focus {
-	color: var(--color-accent);
+.list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
