@@ -35,16 +35,10 @@ img {
 	@extend %list;
 	@extend .flex-container;
 
-
-
 	&__item:not(:last-child) {
 		margin-right: 30px;
 	}
 }
-
-		// .grid__item {
-		// 	width: 270px;
-		// }
 
 // видалити після переводу секцій на БЕМ і SASS ( %indent-in-section )
 						.section {

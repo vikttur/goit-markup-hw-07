@@ -1,5 +1,6 @@
 /* --- section work --- */
 .work {
+	@extend %indent-in-section;
 	padding-top: 0;
 }
 

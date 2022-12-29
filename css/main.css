@@ -186,7 +186,7 @@ summary {
   margin-bottom: 0;
 }
 
-.principles {
+.work, .principles {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -289,7 +289,7 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
-  justify-cntent: center;
+  justify-content: center;
 }
 
 .logo {
