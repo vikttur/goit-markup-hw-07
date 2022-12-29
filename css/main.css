@@ -186,6 +186,31 @@ summary {
   margin-bottom: 0;
 }
 
+.principles {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.grid {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.principles__heading {
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -231,24 +256,19 @@ img {
   color: var(--color-accent);
 }
 
+.grid__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .list {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  padding: 0;
-  margin: -1px;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* --- container --- */
@@ -263,6 +283,13 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+.flex-container, .grid {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-cntent: center;
 }
 
 .logo {
@@ -299,14 +326,12 @@ img {
   margin-right: 50px;
 }
 
-.idea-flex,
 .work-flex,
 .team-flex,
 .client-flex {
   display: flex;
 }
 
-.idea-flex > .item:not(:last-child),
 .work-flex > .item:not(:last-child),
 .team-flex > .item:not(:last-child),
 .client-flex > .item:not(:last-child) {
@@ -409,17 +434,14 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* --- section idea --- */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.principles__item-header {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-header);
 }
-
-.idea-flex > .item {
-  width: 270px;
-}
-
-.idea-bgr-icon {
+.principles__icon-bgr {
   display: flex;
   width: 100%;
   height: 120px;
@@ -428,14 +450,6 @@ img {
   justify-content: center;
   background-color: var(--color-bgr-alternative);
   border-radius: 4px;
-}
-
-.idea-head {
-  margin-bottom: 10px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--color-header);
 }
 
 /* --- section work --- */

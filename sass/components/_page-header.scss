@@ -20,14 +20,14 @@
 	margin-right: 50px;
 }
 
-.idea-flex,
+// .idea-flex,
 .work-flex,
 .team-flex,
 .client-flex {
 	display: flex;
 }
 
-.idea-flex>.item:not(:last-child),
+// .idea-flex>.item:not(:last-child),
 .work-flex>.item:not(:last-child),
 .team-flex>.item:not(:last-child),
 .client-flex>.item:not(:last-child) {
