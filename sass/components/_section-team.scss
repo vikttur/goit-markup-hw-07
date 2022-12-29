@@ -1,7 +1,15 @@
 /* --- section team --- */
 .team {
+	@extend %indent-in-section;
 	background-color: var(--color-bgr-alternative);
+
+	&__heading {
+		margin-bottom: 50px;
+	}
 }
+
+
+
 
 .card-employes,
 .card-progects {

@@ -21,16 +21,16 @@
 }
 
 // .idea-flex,
-.work-flex,
-.team-flex,
-.client-flex {
+// .work-flex,
+// .team-flex,
+.team-flex {
 	display: flex;
 }
 
 // .idea-flex>.item:not(:last-child),
-.work-flex>.item:not(:last-child),
-.team-flex>.item:not(:last-child),
-.client-flex>.item:not(:last-child) {
+// .work-flex>.item:not(:last-child),
+// .team-flex>.item:not(:last-child),
+.team-flex>.item:not(:last-child) {
 	margin-right: 30px;
 }
 
