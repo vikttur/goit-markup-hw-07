@@ -186,7 +186,7 @@ summary {
   margin-bottom: 0;
 }
 
-.team, .work, .principles {
+.clients, .team, .work, .principles {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -293,7 +293,7 @@ img {
   margin: 0;
 }
 
-.flex-container, .grid {
+.flex-container, .clients__link, .grid {
   display: flex;
   padding: 0;
   margin: 0;
@@ -482,7 +482,6 @@ img {
   overflow: hidden;
 }
 
-/* --- section team --- */
 .team {
   background-color: var(--color-bgr-alternative);
 }
@@ -568,42 +567,29 @@ img {
   fill: var(--color-bgr-head);
 }
 
-/* --- client --- */
-.client-flex {
-  display: flex;
+.clients__heading {
+  margin-bottom: 50px;
 }
-
-.client-flex .client-items {
-  box-sizing: border-box;
-}
-
-.client-items {
+.clients__grid {
   width: 170px;
   height: 92px;
+  box-sizing: border-box;
 }
-
-.client-items:not(:last-child) {
-  margin-right: 30px;
-}
-
-.client-link {
-  display: flex;
+.clients__link {
+  align-items: center;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   color: var(--color-icon);
   border: 1px solid var(--color-border-client);
   border-radius: 4px;
   transition: border var(--time-animation) var(--timing-function), color var(--time-animation) var(--timing-function);
 }
-
-.client-icon {
+.clients__icon {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
 }
