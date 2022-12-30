@@ -36,11 +36,13 @@
 		color: var(--color-bgr-head);
 
 		transition:
-			background-color var(--time-animation) var(--timing-function);
-	}
+			background-color var(--time-animation) var(--timing-function),
+			color var(--time-animation) var(--timing-function);
+		}
 
 	&__link:hover,
 	&__link:focus {
+		background-color: var(--color-accent);
 		color: var(--color-accent);
 	}
 
@@ -57,7 +59,9 @@
 	}
 }
 
-.footer__link:hover .social__icon,
-.footer__link:focus .social__icon {
-	color: var(--color-bgr-head);
+.social__icon {
+	.footer__link:hover &,
+	.footer__link:focus & {
+		fill: var(--color-bgr-head);
+	}
 }

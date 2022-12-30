@@ -26,13 +26,13 @@
 			color var(--time-animation) var(--timing-function);
 	}
 
+	&__link:hover,
+	&__link:focus {
+		border: 1px solid var(--color-accent);
+		color: var(--color-accent);
+	}
+
 	&__icon {
 		fill: currentColor;
 	}
-}
-
-.clients__link:hover,
-.clients__link:focus {
-	border: 1px solid var(--color-accent);
-	color: var(--color-accent);
 }

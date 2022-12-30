@@ -45,15 +45,17 @@
 			background-color var(--time-animation) var(--timing-function),
 			color var(--time-animation) var(--timing-function);
 	}
+
+	&__link:hover,
+	&__link:focus {
+		background-color: var(--color-accent);
+		color: var(--color-bgr-head);
+	}
 }
 
-.team__link:hover,
-.team__link:focus {
-	background-color: var(--color-accent);
-	color: var(--color-bgr-head);
-}
-
-.team__link:hover .social__icon,
-.team__link:focus .social__icon {
-	fill: var(--color-bgr-head);
+.social__icon {
+	.team__link:hover &,
+	.team__link:focus & {
+		fill: var(--color-bgr-head);
+	}
 }
