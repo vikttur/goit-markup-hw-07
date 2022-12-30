@@ -61,7 +61,7 @@
 			<div class="container">
 				<h2 class="principles__heading">Наші принципи</h2>
 				<ul class="grid">
-					<li class="grid__item">
+					<li class="grid__item principles__item">
 						<div class="principles__icon-bgr">
 							<svg width="70" height="70">
 								<use href="./images/icons.svg#antenna"></use>
@@ -70,7 +70,7 @@
 						<h3 class="principles__item-header">Увага до деталей</h3>
 						<p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 					</li>
-					<li class="grid__item">
+					<li class="grid__item principles__item">
 						<div class="principles__icon-bgr">
 							<svg width="70" height="70">
 								<use href="./images/icons.svg#clock"></use>
@@ -79,7 +79,7 @@
 						<h3 class="principles__item-header">Пунктуальність</h3>
 						<p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 					</li>
-					<li class="grid__item">
+					<li class="grid__item principles__item">
 						<div class="principles__icon-bgr">
 							<svg width="70" height="70">
 								<use href="./images/icons.svg#diagram"></use>
@@ -88,7 +88,7 @@
 						<h3 class="principles__item-header">Планування</h3>
 						<p>Так само консультація з широким активом значною мірою зумовлює.</p>
 					</li>
-					<li class="grid__item">
+					<li class="grid__item principles__item">
 						<div class="principles__icon-bgr">
 							<svg width="70" height="70">
 								<use href="./images/icons.svg#astronaut"></use>
@@ -329,63 +329,63 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container footer-flex">
-			<div class="div-address">
-				<a href="./index.html" class="logo">
+		<div class="container footer__container">
+			<div class="footer__address">
+				<a href="./index.html" class="logo footer__logo">
 					Web<span class="logo__footer">Studio</span>
 				</a>
-				<address class="address">
-					<ul class="list">
+				<address>
+					<ul class="footer__list">
 						<li>
-							<a href="https://goo.gl/maps/BBAmJtsua18arhCD6" class="footer-text link" target="_blank"
+							<a href="https://goo.gl/maps/BBAmJtsua18arhCD6" class="footer__text footer__link" target="_blank"
 								rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li><a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a></li>
-						<li><a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a></li>
+						<li><a href="mailto:info@devstudio.com" class="footer__contact footer__link">info@devstudio.com</a></li>
+						<li><a href="tel:+380961111111" class="footer__contact footer__link">+38 096 111 11 11</a></li>
 					</ul>
 				</address>
 			</div>
-			<div class="div-appeal">
-				<p class="appeal-head">Приєднуйтесь</p>
-				<ul class="list footer-soc-contact">
-					<li class="soc-items">
-						<a href="#" class="link soc-link footer-soc-link">
-							<svg class="footer-soc-icon" width="20" height="20">
+			<div>
+				<p class="footer__appeal">Приєднуйтесь</p>
+				<ul class="social">
+					<li class="social__item">
+						<a href="#" class="social__link footer__link">
+							<svg class="social__icon" width="20" height="20">
 								<use href="./images/icons.svg#instagram"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="soc-items">
-						<a href="#" class="link soc-link footer-soc-link">
-							<svg class="footer-soc-icon" width="20" height="20">
+					<li class="social__item">
+						<a href="#" class="social__link footer__link">
+							<svg class="social__icon" width="20" height="20">
 								<use href="./images/icons.svg#twitter"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="soc-items">
-						<a href="#" class="link soc-link footer-soc-link">
-							<svg class="footer-soc-icon" width="20" height="20">
+					<li class="social__item">
+						<a href="#" class="social__link footer__link">
+							<svg class="social__icon" width="20" height="20">
 								<use href="./images/icons.svg#facebook"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="soc-items">
-						<a href="#" class="link soc-link footer-soc-link">
-							<svg class="footer-soc-icon" width="20" height="20">
+					<li class="social__item">
+						<a href="#" class="social__link footer__link">
+							<svg class="social__icon" width="20" height="20">
 								<use href="./images/icons.svg#linkedin"></use>
 							</svg>
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="div-subscription">
-				<form class="form-subscription">
-					<label for="subscription" class="appeal-head">Підпишіться на розсилку</label>
-					<div class="subscription-wrapper">
-						<input type="text" placeholder="E-mail" name="subscription" id="subscription">
-						<button type="submit" class="button design-button subscription-button">Підписатися
-							<svg class="icon-send" width="24" height="24">
+			<div class="subscription footer__subscription">
+				<form>
+					<label for="subscription" class="footer__appeal">Підпишіться на розсилку</label>
+					<div class="subscription__wrapper">
+						<input class="subscription__input" type="text" placeholder="E-mail" name="subscription" id="subscription">
+						<button type="submit" class="subscription__button">Підписатися
+							<svg class="subscription__icon" width="24" height="24">
 								<use href="./images/icons.svg#send"></use>
 							</svg>
 						</button>

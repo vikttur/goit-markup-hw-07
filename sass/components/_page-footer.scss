@@ -1,124 +1,63 @@
-/* --- footer --- */
 .footer {
 	padding: 60px 0;
 	background-color: var(--color-bgr-footer);
+
+	&__container {
+		display: flex;
+		align-items: baseline;
+	}
+
+	&__address {
+		margin-right: 30px;
+		width: 270px;
+	}
+
+	&__logo {
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		@extend %list;
+	}
+
+	&__appeal {
+		display: block;
+		margin-bottom: 20px;
+	
+		font-weight: 700;
+		line-height: 1.14;
+		text-transform: uppercase;
+		color: var(--color-bgr-head);
+	}
+
+	&__link {
+		@extend .link;
+		background-color: var(--color-bgr-icon);
+		color: var(--color-bgr-head);
+
+		transition:
+			background-color var(--time-animation) var(--timing-function);
+	}
+
+	&__link:hover,
+	&__link:focus {
+		color: var(--color-accent);
+	}
+
+	&__text {
+		color: var(--color-bgr-head);
+	}
+
+	&__contact {
+		color: var(--color-footer-contact);
+	}
+
+	&__subscription {
+		margin-left: auto;
+	}
 }
 
-.footer-flex {
-	display: flex;
-	align-items: baseline;
-}
-
-.div-address {
-	margin-right: 30px;
-}
-
-.address {
-	width: 270px;
-}
-
-.footer .logo {
-	margin-bottom: 20px;
-}
-
-.logo-footer,
-.footer-text {
+.footer__link:hover .social__icon,
+.footer__link:focus .social__icon {
 	color: var(--color-bgr-head);
-}
-
-.footer-contact {
-	color: var(--color-footer-contact);
-}
-
-.appeal-head {
-	display: block;
-	margin-bottom: 20px;
-
-	font-weight: 700;
-	line-height: 1.14;
-	text-transform: uppercase;
-	color: var(--color-bgr-head);
-}
-
-.footer-soc-contact {
-	display: flex;
-	padding: 0;
-	margin: 0;
-}
-
-.footer-soc-link {
-	background-color: var(--color-bgr-icon);
-	color: var(--color-bgr-head);
-
-	transition:
-		background-color var(--time-animation) var(--timing-function);
-}
-
-.footer-soc-icon {
-	fill: currentColor;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-	background-color: var(--color-accent);
-}
-
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-	color: var(--color-bgr-head);
-}
-
-.div-subscription {
-	margin-left: auto;
-}
-
-.div-subscription input {
-	padding: 15px;
-	padding-left: 16px;
-	margin-right: 12px;
-
-	width: 358px;
-	font-family: inherit;
-	background-color: rgba(33, 150, 243, 0);
-	color: var(--color-bgr-head);
-
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-	border-radius: 4px;
-}
-
-.div-subscription input::placeholder {
-	font-size: 16px;
-	line-height: 1.25;
-	color: rgba(255, 255, 255, 0.6);
-}
-
-.subscription-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
-
-// готово
-.subscription-button {
-	@extend %button-main;
-	min-width: 200px;
-	padding: 10px 28px;
-
-	text-align: left;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.subscription-button:hover,
-.subscription-button:focus {
-	background-color: var(--color-accent);
-}
-
-.icon-send {
-	position: absolute;
-	top: 50%;
-	right: 28px;
-
-	transform: translateY(-50%);
 }

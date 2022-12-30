@@ -5,6 +5,10 @@
 		@extend %visually-hidden;
 	}
 
+	&__item {
+		width: 270px;
+	}
+
 	&__item-header {
 		margin-bottom: 10px;
 

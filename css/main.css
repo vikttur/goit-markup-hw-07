@@ -162,7 +162,7 @@ summary {
   display: list-item;
 }
 
-.portfolio__button, .submit-button, .subscription-button, .hero__button {
+.portfolio__button, .submit-button, .subscription__button, .hero__button {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -170,7 +170,7 @@ summary {
   cursor: pointer;
 }
 
-.submit-button, .subscription-button, .hero__button {
+.submit-button, .subscription__button, .hero__button {
   background-color: var(--color-accent);
   font-weight: 700;
   line-height: 1.88;
@@ -191,7 +191,7 @@ summary {
   padding-bottom: 94px;
 }
 
-.projects, .social, .grid {
+.projects, .footer__list, .social, .grid {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -222,7 +222,7 @@ p {
   margin-bottom: 0;
 }
 
-.link, .contact__link, .navigation__link,
+.link, .footer__link, .contact__link, .navigation__link,
 .logo-link {
   text-decoration: none;
   font-style: normal;
@@ -248,11 +248,11 @@ img {
   margin-right: auto;
 }
 
-.link, .contact__link, .navigation__link {
+.link, .footer__link, .contact__link, .navigation__link {
   color: var(--color-main);
   transition: color var(--time-animation) var(--timing-function);
 }
-.link:hover, .contact__link:hover, .navigation__link:hover, .link:focus, .contact__link:focus, .navigation__link:focus {
+.link:hover, .footer__link:hover, .contact__link:hover, .navigation__link:hover, .link:focus, .footer__link:focus, .contact__link:focus, .navigation__link:focus {
   color: var(--color-accent);
 }
 
@@ -433,12 +433,14 @@ img {
   box-shadow: 0;
   transition: background-color var(--time-animation) var(--timing-function), box-shadow var(--time-animation) var(--timing-function);
 }
-
 .hero__button:hover, .hero__button:focus {
   background-color: var(--color-btn-active);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.principles__item {
+  width: 270px;
+}
 .principles__item-header {
   margin-bottom: 10px;
   font-weight: 700;
@@ -555,39 +557,22 @@ img {
   color: var(--color-accent);
 }
 
-/* --- footer --- */
 .footer {
   padding: 60px 0;
   background-color: var(--color-bgr-footer);
 }
-
-.footer-flex {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-
-.div-address {
+.footer__address {
   margin-right: 30px;
-}
-
-.address {
   width: 270px;
 }
-
-.footer .logo {
+.footer__logo {
   margin-bottom: 20px;
 }
-
-.logo-footer,
-.footer-text {
-  color: var(--color-bgr-head);
-}
-
-.footer-contact {
-  color: var(--color-footer-contact);
-}
-
-.appeal-head {
+.footer__appeal {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -595,38 +580,30 @@ img {
   text-transform: uppercase;
   color: var(--color-bgr-head);
 }
-
-.footer-soc-contact {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-soc-link {
+.footer__link {
   background-color: var(--color-bgr-icon);
   color: var(--color-bgr-head);
   transition: background-color var(--time-animation) var(--timing-function);
 }
-
-.footer-soc-icon {
-  fill: currentColor;
+.footer__link:hover, .footer__link:focus {
+  color: var(--color-accent);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--color-accent);
-}
-
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
+.footer__text {
   color: var(--color-bgr-head);
 }
-
-.div-subscription {
+.footer__contact {
+  color: var(--color-footer-contact);
+}
+.footer__subscription {
   margin-left: auto;
 }
 
-.div-subscription input {
+.footer__link:hover .social__icon,
+.footer__link:focus .social__icon {
+  color: var(--color-bgr-head);
+}
+
+.subscription__input {
   padding: 15px;
   padding-left: 16px;
   margin-right: 12px;
@@ -638,49 +615,41 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
-.div-subscription input::-moz-placeholder {
+.subscription__input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.div-subscription input:-ms-input-placeholder {
+.subscription__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.div-subscription input::placeholder {
+.subscription__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.subscription-wrapper {
+.subscription__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
-.subscription-button {
+.subscription__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
+.subscription__button {
   min-width: 200px;
   padding: 10px 28px;
   text-align: left;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.subscription-button:hover,
-.subscription-button:focus {
+.subscription__button:hover, .subscription__button:focus {
   background-color: var(--color-accent);
-}
-
-.icon-send {
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
 }
 
 .portfolio__grid-button {
