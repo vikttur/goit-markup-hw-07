@@ -6,15 +6,6 @@
 	@extend %container-position;
 }
 
-// видалити (міняємо на .flex-container)
-.nav-site,
-.nav-flex,
-.contact-flex {
-	display: flex;
-	padding: 0;
-	margin: 0;
-}
-
 .flex-container {
 	display: flex;
 	padding: 0;
